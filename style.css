@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@300&family=Oswald&family=Playfair+Display&family=Rajdhani:wght@500&family=Tilt+Prism&family=Tulpen+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+font-family: 'Oswald', sans-serif;
+    
+    
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    min-height: 100vh;
+}
+.container{
+    padding: 25px;
+    background-color: white;
+    height: min-content;
+    width: 30%;
+    border-radius: 10px;
+}
+.search-box{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.search-box input{
+    background-color: rgb(116, 216, 216);
+    color: black;
+    font-size: 20px;
+    height: min-content;
+    width: 85%;
+    padding: 10px;
+    border-radius: 10px;
+    text-transform: capitalize;
+}
+.search-box input ::placeholder{
+  color: black;
+}
+.search-box button{
+    padding: 10px;
+    background-color: rgb(116, 216, 216);
+    cursor: pointer;
+    font-size: 20px;
+    height: 45px;
+    width:45px;
+    border-radius: 50%;
+}
+.weather-body{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.weather-body img{
+    width: 60%;
+}
+.weather-box{
+    margin: 15px 0;
+
+}
+.weather-box .temperature{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 800;
+    position: relative;
+}
+.weather-box .temperature sup{
+    position: absolute;
+    font-size: 10px;
+    font-weight: 800;
+}
+.weather-box .description{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.weather-details{
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.weather-details span{
+    font-weight: 700;
+}
+.weather-details i {
+    font-size: 30px;
+}
+.humidity , .wind{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    text-transform: capitalize;
+
+}
+.location_error{
+    margin-top: 20px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.location_error h1{
+    font-size: 20px;
+    color: #6b6b6b;
+    margin-block-end: 15px;
+}
+.location_error img{
+    width: 80%;
+}
